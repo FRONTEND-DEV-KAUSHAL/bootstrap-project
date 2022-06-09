@@ -313,7 +313,7 @@ body{
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('../images/slider.jpg');
+  background-image: url('../img/slider.jpg');
   background-size: cover;
   position: relative;
 }
@@ -374,13 +374,16 @@ body{
 .rotate{
   transform: rotate(630deg);
   position: absolute;
-  top: 20%;
-  left: 3.8%;
+  /* top: 20%; */
+  /* top: 150%; */
+  left: -25px;
+  width: 100px;
 }
 .rotate::after{
 content: '';
 top: 14px;
-right: -60px;
+/* right: -60px; */
+right: -30px;
 width: 40px;
 height: 1px;
 content: "";
@@ -388,6 +391,48 @@ display: block;
 position: absolute;
 background-color: var(--bs-primary);
 }
-/* .header-follow{
+.header-follow{
+  top: 50%;
+  left: 0;
+  transform: translate(-50%,-50%);
   position: fixed;
-} */
+}
+.social-icon{
+  position: absolute;
+  top: -150px;
+  left: 18px;
+}
+.logo img{
+  width: 150px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.header{
+  z-index: 9;
+}
+.header .menu i{
+  color: var(--bs-light);
+  padding-top: 20px;
+  padding-left: 20px;
+  display: inline-block;
+}
+.countrys{
+  position: absolute;
+  top: 68%;
+  z-index: 9;
+}
+.morocco{
+  border-left: 4px solid #243238;
+  padding-right: 5px;
+}
+.morocco h5{
+  font-family: 'saira';
+  padding-left: 10px;
+}
+.morocco p{
+  font-size: 14px;
+  display: block;
+  padding-left: 15px;
+  color: var(--bs-light);
+  font-family: 'saira';
+}
