@@ -14,6 +14,8 @@
     --bs-dark-rgb: 0, 0, 0;
     --bs-light: #FFFFFF;
     --bs-light-rgb: 255, 255, 255;
+    --primary-font : 'nunito';
+    --secondray-font : 'saira';
 }
 ul,ol{
     padding: 0;
@@ -501,7 +503,57 @@ background-color: var(--bs-primary);
   width: 540px;
   height: 435px;
   overflow: hidden;
-  background-image: url('../img/project-1.jpg');
-  background-repeat: no-repeat;
-  background-position: top 50%;
+  margin-bottom: 20px;
+}
+.img-big img{
+  max-width: 100%;
+}
+.img-small{
+  width: 350px;
+}
+.img-small img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-fit img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.res-line , .res-line-y, .res-line-b{
+  width: 100px;
+  height: 3px;
+  background-color: var(--bs-info);
+  margin-top: 40px;
+}
+.res-list li .title .h5{
+  font-family: var(--secondray-font);
+}
+.res-line-y{
+  background-color: var(--bs-warning);
+}
+.res-line-b{
+  background-color: var(--bs-success);
+}
+.resume .card{
+  border-top: 2px solid var(--bs-info);
+}
+.resume .card:nth-child(2){
+  border-top-color: var(--bs-warning);
+}
+.resume .card:nth-child(3){
+  border-top-color: var(--bs-success);
+}
+.res-list li{
+  line-height: 0.5;
+}
+.team{
+  overflow: hidden;
+}
+.team .card{
+  padding: 0;
+}
+.team-content{
+  padding: 20px;
 }
