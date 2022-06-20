@@ -904,3 +904,13 @@ background-color: var(--bs-primary);
   color: var(--bs-light);
   border-radius: 10px;
 }
+.page-banner{
+  background-color: var(--bs-secondary);
+}
+.mylink a{
+  text-decoration: none;
+  color: var(--bs-light);
+}
+/* .menu{
+  z-index: 9999;
+} */
